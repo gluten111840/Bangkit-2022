@@ -1,0 +1,24 @@
+Pendahuluan
+
+Website : Halaman yang menampilkan informasi melalui teks atau gambar. Website dapat diakses melalui internet dengan menggunakan browser.
+Browser : Sebuah perangkat lunak yang dapat menerjemahkan berkas HTML, CSS, dan Javascript yang di dapat dari server untuk ditampilkan dalam bentuk halaman website.
+HTTP Server : Server berperan pada sebuah website sebagai sebuah software yang dapat menerima transaksi dari HyperText Transfer Protocol.
+DNS Server : Server yang dapat mengubah/mengarahkan website melalui sebuah nama domain.
+Client : Perangkat yang meminta (request) suatu layanan tertentu ke suatu server.
+HTML : Salah satu markup language yang digunakan untuk membuat struktur dan menampilkan konten pada World Wide Web (Website).
+CSS : Bahasa yang digunakan untuk mengatur dan mempercantik tampilan pada website.
+JavaScript : Bahasa pemrograman yang digunakan untuk membantu website menampilkan informasi secara dinamis.
+Text Editor : Sebuah perangkat lunak yang digunakan untuk mengelola plain text. Kode HTML, CSS, dan Javascript dituliskan menggunakan perangkat ini.
+Plain text : Teks yang tidak terformat. Format teks yang digunakan dalam menuliskan berkas HTML, CSS, dan Javascript.
+Rich text : Teks terformat. Format teks yang digunakan ketika kita menulis menggunakan Microsoft Word atau teks editor berbasis WYSIWYG (What You See Is What You Get).
+Element : Sebuah komponen pada HTML yang ditandai dengan tag pembuka dan penutup.
+
+
+CSS
+
+Rule : Sebuah aturan styling yang harus diterapkan pada elemen HTML, dalam sebuah rule terdapat selector dan deklarasi properti styling.
+Selector : Sebuah bagian dari rule, yang mengidentifikasi target elemen untuk menetapkan sebuah rule.
+Declaration : Sebuah bagian dari rule, yang terdiri dari pasangan properti dan nilainya.
+External Style Sheet : Berkas terpisah yang di dalamnya hanya terdapat sebuah rules yang akan digunakan pada website.
+Embedded Style Sheet : Kumpulan rules yang dituliskan dalam berkas HTML dengan menggunakan elemen <style>.
+Inline Style : styling yang diterapkan pada elemen HTML dengan menggunakan atribut style.
