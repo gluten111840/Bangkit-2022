@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.logo {
+    width: 80px;
+    margin-left: 30px;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+ }
+
+nav {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #81171b;
+    padding: 20px 0px;
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    font-weight: 500;
+    padding: 5px 15px;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.tim {
+    padding: 20px;
+    margin: 20px 200px;
+    overflow: auto;
+    display: flex;
+}
+
+.box {
+    flex-basis: 25%;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgb(226, 84, 84);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #81171b;
+    text-align: center;
+    font-weight: bold;
+}
+
+.judul {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.keterangan {
+    margin: 10px 200px;
+    font-size: 2em;
+    text-align: justify;
+    float: left;
+}
+
+header {
+    display: inline;
+}
