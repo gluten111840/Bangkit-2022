@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minimalis.me | Yuk kurangi barang bekasmu!</title>
+    <link rel="icon" href="assets/images/logo-nav.png">
     <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
@@ -14,6 +16,7 @@
             <ul>
                 <li><a href="#beranda">Beranda</a></li>
                 <li><a href="#latbel">Latar Belakang</a></li>
+                <li><a href="#prototype">Prototipe</a></li>
                 <li><a href="#team">Tim</a></li>
             </ul>
         </nav>
@@ -22,50 +25,97 @@
         <div id="container">
             <article id="beranda">
                 <img src="assets/images/banner.png" alt="banner" width="100%">
+                <div class="paragraf margin">
+                    <p><strong>Minimalis.me</strong> merupakan sebuah aplikasi yang berbasis <em>Android</em> dan <em>Website</em> yang bertujuan mendorong mahasiswa melakukan gaya hidup minimalisme. 
+                    Dalam aplikasi ini, mahasiswa sangat dimudahkan untuk mengorganisasi barang yang dimilikinya. Aplikasi ini juga menyediakan tempat untuk menjual dan membeli barang bekas 
+                    dari seseorang yang barangnya telah lolos seleksi kualitas produk sebelumnya.</p>
+                </div>
             </article>
             <article id="latbel">
                 <h1 class="judul">Latar Belakang</h1>
-                <p class="keterangan">Langkah kami didasari dengan masalah yang dekat dengan kami sebagai mahasiswa. 
-                    Perilaku yang cenderung impulsif, konsumtif, dan ekspresif membuat kita mengonsumsi banyak hal, 
-                    termasuk barang-barang di sekitar kita. Setelahnya, barang-barang tersebut tidak dipakai lagi, menumpuk, 
-                    dan terlupakan, apalagi dengan adanya pemakaian <em>e-commerce</em> yang memudahkan segala transaksi. 
-                    Bahkan tersedia data yg menunjukkan pemakaian barang oleh generasi milenial hanya 1-5x kemudian tidak dipakai lagi.</p>
+                <div class="latar">
+                    <p class="keterangan">Langkah kami didasari dengan masalah yang dekat dengan kami sebagai mahasiswa. 
+                        Perilaku yang cenderung impulsif, konsumtif, dan ekspresif membuat kita mengonsumsi banyak hal, 
+                        termasuk barang-barang di sekitar kita. Setelahnya, barang-barang tersebut tidak dipakai lagi, menumpuk, 
+                        dan terlupakan, apalagi dengan adanya pemakaian <em>e-commerce</em> yang memudahkan segala transaksi. 
+                        Bahkan tersedia data yang menunjukkan pemakaian barang oleh generasi milenial hanya 1-5 kali kemudian tidak dipakai lagi.</p>
+                    <figure>
+                        <img src="assets/images/latar belakang.png" alt="latar belakang" width="600px">
+                        <figcaption>Grafik rasio transaksi E-Commerce terhadap pendapatan bulanan (source: databoks.com)</figcaption>
+                    </figure>
+                </div>
+            </article>
+            <article id="prototype">
+                <h1 class="judul">Prototipe</h1>
+                <div class="prototipe">
+                    <a 
+                        href="https://www.figma.com/proto/4uySaVpj5Ej5nO1KeRu7NY/Minimalisme?node-id=118%3A767&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=118%3A767"
+                        class="btn">
+                        Pengalaman penuh Prototype
+                    </a>
+                </div>
+                <div class="tim">
+                    <div class="box">
+                        <img src="assets/images/Login.png" alt="login" width="300px">
+                    </div>
+                    <div class="box">
+                        <img src="assets/images/Landing Page.png" alt="landing" width="300px">
+                    </div>
+                    <div class="box">
+                        <img src="assets/images/HOME ALT.png" alt="home" width="300px">
+                    </div>
+                    <div class="box">
+                        <img src="assets/images/Detail Pelanggan.png" alt="pelanggan" width="300px">
+                    </div>
+                </div>
             </article>
             <article id="team">
                 <h1 class="judul">Team Member</h1>
                 <div class="tim">
                     <div class="box">
-                        <img src="assets/images/annisa.png" alt="ketua" width="150px">
+                        <img src="assets/images/annisa.png" alt="annisa" width="150px">
                         <h1>Annisa Ramadhani</h1>
                         <p>Chief Executive Officer</p>
                     </div>
                     <div class="box">
                         <br>
-                        <img src="assets/images/bayu.png" alt="anggota" width="150px">
+                        <img src="assets/images/bayu.png" alt="bayu" width="150px">
                         <h1>Bayu Eka Prawira</h1>
                         <p>Information and Technology Manager</p>
                     </div>
                     <div class="box">
                         <br>
-                        <img src="assets/images/coco.png" alt="anggota" width="200px">
+                        <img src="assets/images/coco.png" alt="coco" width="185px">
                         <h1>Hafizhah Ashilah</h1>
                         <p>Finance and Marketing Manager</p>
                     </div>
                     <div class="box">
-                        <br><br>
-                        <img src="assets/images/daffa.png" alt="anggota" width="150px">
+                        <br>
+                        <img src="assets/images/daffa.png" alt="daffa" width="150px">
                         <h1>Daffa Amanullah Setyawan</h1>
                         <p>Public Relation Manager</p>
                     </div>
                 </div>
             </article>
+            <button onclick="topFunction()" id="myBtn" title="Go to top" class="fa fa-arrow-up"></button>
         </div>
     </main>
     <aside>
-        <article></article>
+        <article class="box1">
+            <header>
+                <h2 class="judul">Biodata Diri</h1>
+                <img src="assets/images/bayu.png" alt="bayu" width="200px">
+                <h4>Bayu Eka Prawira</h4>
+            </header>
+            <section>
+                <p>Teknik Informatika - ITS</p>
+                <a href="https://www.linkedin.com/in/bayuekaprawira/" class="fa fa-linkedin ikon"></a>
+            </section>
+        </article>
     </aside>
     <footer>
         <p>&#169; 2022, Minimalis.me</p>
     </footer>
+    <script src="assets/javascript/main.js"></script>
 </body>
 </html>
