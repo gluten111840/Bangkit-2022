@@ -3,7 +3,7 @@ const books = require('./books');
 
 const addBookHandler = (request, h) => {
   const {
-    name, year, author, summary, publisher, pageCount, readPage,
+    name, year, author, summary, publisher, pageCount, readPage, reading,
   } = request.payload;
 
   if (name === undefined) {
@@ -27,7 +27,6 @@ const addBookHandler = (request, h) => {
   const insertedAt = new Date().toISOString();
   const updatedAt = insertedAt;
   const finished = (pageCount === readPage);
-  const reading = false;
   const newBook = {
     id,
     name,
@@ -66,16 +65,64 @@ const addBookHandler = (request, h) => {
   return response;
 };
 
-const getAllBooksHandler = () => ({
-  status: 'success',
-  data: {
-    books: books.map((book) => ({
-      id: book.id,
-      name: book.name,
-      publisher: book.publisher,
-    })),
-  },
-});
+const getAllBooksHandler = (request, h) => {
+  const { name, reading, finished } = request.query;
+
+  if (name !== undefined) {
+    const queryBooks = books.filter((book) => book.name.toLowerCase().includes(name.toLowerCase()));
+    return {
+      status: 'success',
+      data: {
+        books: queryBooks.map((book) => ({
+          id: book.id,
+          name: book.name,
+          publisher: book.publisher,
+        })),
+      },
+    };
+  }
+
+  if (reading !== undefined) {
+    const queryBooks = books.filter((book) => Number(book.reading) === Number(reading));
+    return {
+      status: 'success',
+      data: {
+        books: queryBooks.map((book) => ({
+          id: book.id,
+          name: book.name,
+          publisher: book.publisher,
+        })),
+      },
+    };
+  }
+
+  if (finished !== undefined) {
+    const queryBooks = books.filter((book) => Number(book.finished) === Number(finished));
+    return {
+      status: 'success',
+      data: {
+        books: queryBooks.map((book) => ({
+          id: book.id,
+          name: book.name,
+          publisher: book.publisher,
+        })),
+      },
+    };
+  }
+
+  const response = h.response({
+    status: 'success',
+    data: {
+      books: books.map((book) => ({
+        id: book.id,
+        name: book.name,
+        publisher: book.publisher,
+      })),
+    },
+  });
+  response.code(200);
+  return response;
+};
 
 const getBookByIdHandler = (request, h) => {
   const { bookId } = request.params;
@@ -176,6 +223,26 @@ const deleteBookByIdHandler = (request, h) => {
   response.code(404);
   return response;
 };
+
+// get all books using query params by name
+// const getBooksByNameHandler = (request, h) => {
+//   const { name } = request.query;
+//   const filtered = books.filter((book) => book.name.toLowerCase().includes(name.toLowerCase()));
+//   if (filtered.length > 0) {
+//     return {
+//       status: 'success',
+//       data: {
+//         books: filtered,
+//       },
+//     };
+//   }
+//   const response = h.response({
+//     status: 'fail',
+//     message: 'Buku tidak ditemukan',
+//   });
+//   response.code(404);
+//   return response;
+// };
 
 module.exports = {
   addBookHandler,
