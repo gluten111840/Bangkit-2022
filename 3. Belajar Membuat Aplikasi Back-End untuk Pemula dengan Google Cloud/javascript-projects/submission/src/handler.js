@@ -224,26 +224,6 @@ const deleteBookByIdHandler = (request, h) => {
   return response;
 };
 
-// get all books using query params by name
-// const getBooksByNameHandler = (request, h) => {
-//   const { name } = request.query;
-//   const filtered = books.filter((book) => book.name.toLowerCase().includes(name.toLowerCase()));
-//   if (filtered.length > 0) {
-//     return {
-//       status: 'success',
-//       data: {
-//         books: filtered,
-//       },
-//     };
-//   }
-//   const response = h.response({
-//     status: 'fail',
-//     message: 'Buku tidak ditemukan',
-//   });
-//   response.code(404);
-//   return response;
-// };
-
 module.exports = {
   addBookHandler,
   getAllBooksHandler,
